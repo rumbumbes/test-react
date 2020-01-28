@@ -1,0 +1,26 @@
+.Form {
+    max-width: 400px;
+    margin-left: 20px;
+}
+.Form label {
+    color: #ffffff;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+input.form-control {
+    height: 30px;
+}
+input.form-control, textarea {
+    border: 1px solid #5a5a5a;
+    font-size: 20px;
+    padding-left: 10px;
+}
+button.btn.btn-primary {
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+

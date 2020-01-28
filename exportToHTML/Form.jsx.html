@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Form.jsx</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ff9d00;}
+.s1 { color: #ffffff;}
+.s2 { color: #3ad900;}
+.s3 { color: #e1efff;}
+.s4 { color: #ffdd00;}
+.s5 { color: #ffffff; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#002240">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Form.jsx</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">React from </span><span class="s2">&quot;react&quot;</span><span class="s3">;</span>
+<span class="s0">import </span><span class="s2">'../Css/Form.css'</span>
+
+
+<span class="s0">class </span><span class="s1">Form </span><span class="s0">extends </span><span class="s1">React</span><span class="s3">.</span><span class="s1">Component </span><span class="s3">{</span>
+    <span class="s1">constructor</span><span class="s3">(</span><span class="s1">props</span><span class="s3">) {</span>
+        <span class="s0">super</span><span class="s3">(</span><span class="s1">props</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">state </span><span class="s0">= </span><span class="s3">{</span>
+            <span class="s1">name</span><span class="s0">: </span><span class="s2">''</span><span class="s3">,</span>
+            <span class="s1">email</span><span class="s0">: </span><span class="s2">''</span><span class="s3">,</span>
+            <span class="s1">message</span><span class="s0">: </span><span class="s2">''</span>
+        <span class="s3">}</span>
+    <span class="s3">}</span>
+
+    <span class="s1">render</span><span class="s3">() {</span>
+        <span class="s0">return</span><span class="s3">(</span>
+            <span class="s3">&lt;</span><span class="s4">div className</span><span class="s2">=&quot;Form&quot;</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">form id</span><span class="s2">=&quot;contact-form&quot; </span><span class="s4">onSubmit</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleSubmit</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">)} </span><span class="s4">method</span><span class="s2">=&quot;POST&quot;</span><span class="s3">&gt;</span>
+                    <span class="s3">&lt;</span><span class="s4">div className</span><span class="s2">=&quot;form-group&quot;</span><span class="s3">&gt;</span>
+                        <span class="s3">&lt;</span><span class="s4">label htmlFor</span><span class="s2">=&quot;name&quot;</span><span class="s3">&gt;</span><span class="s5">Name</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span>
+                        <span class="s3">&lt;</span><span class="s4">input type</span><span class="s2">=&quot;text&quot; </span><span class="s4">className</span><span class="s2">=&quot;form-control&quot; </span><span class="s4">placeholder</span><span class="s2">=</span><span class="s3">{</span><span class="s2">'name'</span><span class="s3">} </span><span class="s4">value</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">name</span><span class="s3">} </span><span class="s4">onChange</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">onNameChange</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">)} /&gt;</span>
+                    <span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+                    <span class="s3">&lt;</span><span class="s4">div className</span><span class="s2">=&quot;form-group&quot;</span><span class="s3">&gt;</span>
+                        <span class="s3">&lt;</span><span class="s4">label htmlFor</span><span class="s2">=&quot;exampleInputEmail1&quot;</span><span class="s3">&gt;</span><span class="s5">Email address</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span>
+                        <span class="s3">&lt;</span><span class="s4">input type</span><span class="s2">=&quot;email&quot; </span><span class="s4">className</span><span class="s2">=&quot;form-control&quot; </span><span class="s4">aria-describedby</span><span class="s2">=&quot;emailHelp&quot; </span><span class="s4">value</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">email</span><span class="s3">} </span><span class="s4">onChange</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">onEmailChange</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">)} /&gt;</span>
+                    <span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+                    <span class="s3">&lt;</span><span class="s4">div className</span><span class="s2">=&quot;form-group&quot;</span><span class="s3">&gt;</span>
+                        <span class="s3">&lt;</span><span class="s4">label htmlFor</span><span class="s2">=&quot;message&quot;</span><span class="s3">&gt;</span><span class="s5">Message</span><span class="s3">&lt;/</span><span class="s4">label</span><span class="s3">&gt;</span>
+                        <span class="s3">&lt;</span><span class="s4">textarea className</span><span class="s2">=&quot;form-control&quot; </span><span class="s4">rows</span><span class="s2">=&quot;5&quot; </span><span class="s4">value</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">message</span><span class="s3">} </span><span class="s4">onChange</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">onMessageChange</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">)} /&gt;</span>
+                    <span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+
+                    <span class="s3">&lt;</span><span class="s4">button type</span><span class="s2">=&quot;submit&quot; </span><span class="s4">className</span><span class="s2">=&quot;btn btn-primary&quot;</span><span class="s3">&gt;</span><span class="s5">Submit</span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;/</span><span class="s4">form</span><span class="s3">&gt;</span>
+            <span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+        <span class="s3">);</span>
+    <span class="s3">}</span>
+
+    <span class="s1">onNameChange</span><span class="s3">(</span><span class="s1">event</span><span class="s3">) {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">name</span><span class="s0">: </span><span class="s1">event</span><span class="s3">.</span><span class="s1">target</span><span class="s3">.</span><span class="s1">value</span><span class="s3">})</span>
+    <span class="s3">}</span>
+    <span class="s1">onEmailChange</span><span class="s3">(</span><span class="s1">event</span><span class="s3">) {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">email</span><span class="s0">: </span><span class="s1">event</span><span class="s3">.</span><span class="s1">target</span><span class="s3">.</span><span class="s1">value</span><span class="s3">})</span>
+    <span class="s3">}</span>
+    <span class="s1">onMessageChange</span><span class="s3">(</span><span class="s1">event</span><span class="s3">) {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">message</span><span class="s0">: </span><span class="s1">event</span><span class="s3">.</span><span class="s1">target</span><span class="s3">.</span><span class="s1">value</span><span class="s3">})</span>
+    <span class="s3">}</span>
+
+    <span class="s1">handleSubmit</span><span class="s3">(</span><span class="s1">event</span><span class="s3">) {</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+
+<span class="s0">export default </span><span class="s1">Form</span><span class="s3">;</span>
+</pre>
+</body>
+</html>

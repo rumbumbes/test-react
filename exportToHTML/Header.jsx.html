@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Header.jsx</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ff9d00;}
+.s1 { color: #ffffff;}
+.s2 { color: #3ad900;}
+.s3 { color: #e1efff;}
+.s4 { color: #ffdd00;}
+.s5 { color: #ffffff; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#002240">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Header.jsx</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">React from </span><span class="s2">&quot;react&quot;</span><span class="s3">;</span>
+<span class="s0">import </span><span class="s2">'../Css/header.css'</span>
+
+<span class="s0">const </span><span class="s1">Header </span><span class="s0">= </span><span class="s3">() </span><span class="s0">=&gt; </span><span class="s3">{</span>
+    <span class="s0">return </span><span class="s3">(</span>
+        <span class="s3">&lt;</span><span class="s4">div className</span><span class="s2">=&quot;header&quot;</span><span class="s3">&gt;</span>
+            <span class="s3">&lt;</span><span class="s4">img src</span><span class="s2">=</span><span class="s3">{</span><span class="s1">require</span><span class="s3">(</span><span class="s2">&quot;../images/logo.png&quot;</span><span class="s3">)} </span><span class="s4">alt</span><span class="s2">=&quot;&quot; </span><span class="s4">className</span><span class="s2">=&quot;logo&quot;</span><span class="s3">/&gt;</span>
+            <span class="s3">&lt;</span><span class="s4">ul</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">li</span><span class="s3">&gt;&lt;</span><span class="s4">a href</span><span class="s2">=&quot;#s&quot;</span><span class="s3">&gt;</span><span class="s5">Home</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">li</span><span class="s3">&gt;&lt;</span><span class="s4">a href</span><span class="s2">=&quot;#s&quot;</span><span class="s3">&gt;</span><span class="s5">About</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">li</span><span class="s3">&gt;&lt;</span><span class="s4">a href</span><span class="s2">=&quot;#s&quot;</span><span class="s3">&gt;</span><span class="s5">My work</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">li</span><span class="s3">&gt;&lt;</span><span class="s4">a href</span><span class="s2">=&quot;#s&quot;</span><span class="s3">&gt;</span><span class="s5">Projects</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">li</span><span class="s3">&gt;&lt;</span><span class="s4">a href</span><span class="s2">=&quot;#s&quot;</span><span class="s3">&gt;</span><span class="s5">Reviews</span><span class="s3">&lt;/</span><span class="s4">a</span><span class="s3">&gt;&lt;/</span><span class="s4">li</span><span class="s3">&gt;</span>
+            <span class="s3">&lt;/</span><span class="s4">ul</span><span class="s3">&gt;</span>
+            <span class="s3">&lt;</span><span class="s4">div className</span><span class="s2">=&quot;social-wrapper&quot;</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">a href</span><span class="s2">=&quot;https://www.facebook.com&quot;</span><span class="s3">&gt;&lt;</span><span class="s4">img src</span><span class="s2">=</span><span class="s3">{</span><span class="s1">require</span><span class="s3">(</span><span class="s2">&quot;../images/social/facebook.svg&quot;</span><span class="s3">)} </span><span class="s4">alt</span><span class="s2">=&quot;facebook&quot; </span><span class="s4">className</span><span class="s2">=&quot;social&quot;</span><span class="s3">/&gt;&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">a href</span><span class="s2">=&quot;&quot;</span><span class="s3">&gt;&lt;</span><span class="s4">img src</span><span class="s2">=</span><span class="s3">{</span><span class="s1">require</span><span class="s3">(</span><span class="s2">&quot;../images/social/linkedin.svg&quot;</span><span class="s3">)} </span><span class="s4">alt</span><span class="s2">=&quot;&quot; </span><span class="s4">className</span><span class="s2">=&quot;social&quot;</span><span class="s3">/&gt;&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span>
+                <span class="s3">&lt;</span><span class="s4">a href</span><span class="s2">=&quot;&quot;</span><span class="s3">&gt;&lt;</span><span class="s4">img src</span><span class="s2">=</span><span class="s3">{</span><span class="s1">require</span><span class="s3">(</span><span class="s2">&quot;../images/social/mail.svg&quot;</span><span class="s3">)} </span><span class="s4">alt</span><span class="s2">=&quot;&quot; </span><span class="s4">className</span><span class="s2">=&quot;social&quot;</span><span class="s3">/&gt;&lt;/</span><span class="s4">a</span><span class="s3">&gt;</span>
+            <span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+        <span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+    <span class="s3">)</span>
+<span class="s3">}</span>
+
+<span class="s0">export default </span><span class="s1">Header</span><span class="s3">;</span>
+</pre>
+</body>
+</html>
